@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amitg.mabat.SignInActivity">
+
+
+    <ImageView
+        android:id="@+id/text_logo"
+        android:layout_width="172dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/text_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/text_logo"
+        android:layout_marginTop="58dp"
+        android:hint="username"
+        android:ems="10"
+        android:maxLines="1"
+        android:drawableEnd="@drawable/login_username_icon"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:style="@style/login_editText" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/login_editText"
+        android:inputType="textPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:hint="password"
+        android:drawableEnd="@drawable/login_password_icon"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="280dp"
+        android:id="@+id/sign_in_button"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sign in"
+                        android:textColor="@color/transparent_white"
+                        android:layout_centerInParent="true"
+                        android:textSize="11.5pt"/>
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
